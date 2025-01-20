@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandro</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <h3>Hi, I'm Sandro Quispesivana </h3>
@@ -15,40 +17,115 @@
     <p>Intermediate English Level.</p>
     <p>Software engineer from UPC.</p>
 
-    <h3>Experience</h3>
+    <h3>Work</h3>
     <ul>
         <li>Nothing yet :(</li>
     </ul>
 
     <h3>Projects</h3>
 
-    <h4>Web</h4>
     <ul>
-        <li>Dotornet</li>
-        <li>Peveseta</li>
-        <li>Musicallz</li>
-    </ul>
-        
-    <h4>Mobile</h4>
-    <ul>
-        <li>Dotornet</li>
-        <li>Peveseta</li>
-        <li>Musicallz</li>
-    </ul>
-
-    <h4>Desktop</h4>
-    <ul>
-        <li>Pronabec</li>
-        <li>Molecula</li>
-        <li>AcomplePower</li>
-    </ul>
-
-    <h4>Ecoms</h4>
-    <ul>
-        <li>LEBASI</li>
-        <li>SANSUR</li>
+        <li>
+            <div class="card">
+                <h5>Dotornet</h5>
+                <p>App for medical appointments.</p>
+                <div class="platform-icons">
+                    <span class="icon-web">🌐</span>
+                    <span class="icon-mobile">📱</span>
+                </div>
+                <button onclick="openDialog('dotornet')">More Info</button>
+                <a href="dotornet" target="_blank">Page</a>
+                <a href="dotornet" target="_blank">GitHub</a>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <h5>Peveseta</h5>
+                <p>Appfor get a gardening service.</p>
+                <div class="platform-icons">
+                    <span class="icon-web">🌐</span>
+                    <span class="icon-mobile">📱</span>
+                </div>
+                <button onclick="openDialog('peveseta')">More Info</button>
+                <a href="peveseta" target="_blank">Page</a>
+                <a href="peveseta" target="_blank">GitHub</a>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <h5>Musicallz</h5>
+                <p>App like a social media for music lovers.</p>
+                <div class="platform-icons">
+                    <span class="icon-web">🌐</span>
+                    <span class="icon-mobile">📱</span>
+                </div>
+                <button onclick="openDialog('musicallz')">More Info</button>
+                <a href="musicallz" target="_blank">Page</a>
+                <a href="musicallz" target="_blank">GitHub</a>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <h5>Pronabec</h5>
+                <p>App for manage students who work.</p>
+                <div class="platform-icons">
+                    <span class="icon-desktop">💻</span>
+                </div>
+                <button onclick="openDialog('pronabec')">More Info</button>
+                <a href="pronabec" target="_blank">Page</a>
+                <a href="pronabec" target="_blank">GitHub</a>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <h5>AcomplePower</h5>
+                <p>App for electric cars drivers who drive large distant.</p>
+                <div class="platform-icons">
+                    <span class="icon-desktop">💻</span>
+                </div>
+                <button onclick="openDialog('acomplepower')">More Info</button>
+                <a href="acomplepower" target="_blank">Page</a>
+                <a href="acomplepower" target="_blank">GitHub</a>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <h5>Lebasi</h5>
+                <p>Ecom for selling electrodomestic products.</p>
+                <div class="platform-icons">
+                    <span class="icon-web">🌐</span>
+                </div>
+                <button onclick="openDialog('lebasi')">More Info</button>
+                <a href="lebasi" target="_blank">Page</a>
+                <a href="lebasi" target="_blank">GitHub</a>
+            </div>
+        </li>
+        <li>
+            <div class="card">
+                <h5>Sansur</h5>
+                <p>Ecom for selling electrodomestic products too.</p>
+                <div class="platform-icons">
+                    <span class="icon-web">🌐</span>
+                </div>
+                <button onclick="openDialog('sansur')">More Info</button>
+                <a href="sansur" target="_blank">Page</a>
+                <a href="sansur" target="_blank">GitHub</a>
+            </div>
+        </li>
     </ul>
     
+    <!-- Dialog -->
+    <div id="projectDialog" class="dialog">
+        <div class="dialog-content">
+            <span class="close" onclick="closeDialog()">&times;</span>
+            <h2 id="projectTitle"></h2>
+            <video id="projectVideo" controls></video>
+            <p id="projectDescription"></p>
+            <p id="projectTechnologies"></p>
+            <a id="projectPageLink" href="#" target="_blank">Page</a>
+            <a id="projectRepoLink" href="#" target="_blank">GitHub</a>
+        </div>
+    </div>
 
     <h3>Hackatons</h3>
 
