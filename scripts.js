@@ -5,7 +5,7 @@ const projects = {
         description: "Complete description of Dotornet project.",
         technologies: "HTML, CSS, JavaScript, .NET",
         pageLink: "dotornet",
-        repoLink: "dotornet"
+        repoLink: "https://github.com/ClaudioSandro/Dotornet"
     },
     peveseta: {
         title: "Peveseta",
