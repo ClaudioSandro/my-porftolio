@@ -3,6 +3,62 @@ body {
     color: white;*/
 }
 
+
+
+/* Carrusel */
+
+.skills-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.carousel-row {
+    display: flex;
+    animation: scroll-right 20s linear infinite;
+}
+
+.carousel-row.reverse {
+    animation: scroll-left 20s linear infinite;
+}
+
+.skill {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    white-space: nowrap;
+}
+
+.skill.neon {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #00f, #f0f, #0ff) 1;
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
 .card {
     border: 1px solid #ccc;
     padding: 16px;

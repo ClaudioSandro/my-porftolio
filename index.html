@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandro</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
 </head>
 <body>
     <h3>Hi, I'm Sandro</h3>
@@ -19,6 +18,7 @@
     <ul>
         <li>
             <div class="card">
+                <img src="images/LogoLEBASI.png" alt="Company logo">
                 <h5>Multiservicios Lebasi E.I.R.L.</h5>
                 <p>Web developer</p>
                 <p>January 2025 - present</p>
@@ -33,6 +33,7 @@
     <ul>
         <li>
             <div class="card">
+                <img src="images/LogoUPC.png" alt="University logo">
                 <h5>Universidad Peruana de Ciencias Aplicadas</h5>
                 <p>Bachelor's degree, Software Engineer</p>
                 <p>March 2022 - present</p>
@@ -69,58 +70,6 @@
         </div>
     </div>
     
-    <style>
-    .skills-carousel {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow: hidden;
-        width: 100%;
-        height: 150px;
-        position: relative;
-    }
-    
-    .carousel-row {
-        display: flex;
-        animation: scroll-right 10s linear infinite;
-    }
-    
-    .carousel-row.reverse {
-        animation: scroll-left 10s linear infinite;
-    }
-    
-    .skill {
-        margin: 0 10px;
-        padding: 10px 20px;
-        border: 2px solid #ccc;
-        border-radius: 25px;
-        background-color: #f0f0f0;
-        white-space: nowrap;
-    }
-    
-    .skill.neon {
-        border: 2px solid;
-        border-image: linear-gradient(45deg, #00f, #f0f, #0ff) 1;
-    }
-    
-    @keyframes scroll-right {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-    
-    @keyframes scroll-left {
-        0% {
-            transform: translateX(-100%);
-        }
-        100% {
-            transform: translateX(100%);
-        }
-    }
-    </style>
 
 
         <h3>Projects</h3>
@@ -240,27 +189,25 @@
         </div>
     </div>
     
-    <script>
-    function filterProjects(platform) {
-        var cards = document.querySelectorAll('.project-card');
-        cards.forEach(function(card) {
-            if (platform === 'all' || card.classList.contains(platform)) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    }
-    </script>
-
 
 
     <h3>Hackathons</h3>
-
+    <ul>
+        <li>
+            <div class="card">
+                <img src="images/devpost hackaton logo.png" alt="University logo">
+                <h5>Devpost hackathon</h5>
+                <p>I worked with @EstefanoLostaunau @LuisChinchihualpa and @JhersonAstuyauri to develop “medIAnalitica”.</p>
+                <p>Juny 2024</p>
+                
+            </div>
+        </li>
+    </ul>
 
     <h3>Contact</h3>
-    <p>Want to chat? Just shoot me a dm with a direct question on LinkedIn and I'll respond whenever I can.</p>
+    <p>Want to chat? Just shoot me a dm with a direct question on <a href="https://www.linkedin.com/in/claudio-sandro-quispesivana-torres/" target="_blank">LinkedIn</a> and I'll respond whenever I can.</p>
 
+    <script src="scripts.js"></script>
 
 </body>
 </html>
