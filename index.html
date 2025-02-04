@@ -64,94 +64,108 @@
         <li>GitHub</li>
         <li>Cisco</li>
     </ul>
-    <h3>Projects</h3>
 
-    <ul>
-        <li>
+
+        <h3>Projects</h3>
+    
+    <!-- Filtro de plataformas -->
+    <div class="filter">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('web')">Web</button>
+        <button onclick="filterProjects('mobile')">Mobile</button>
+        <button onclick="filterProjects('desktop')">Desktop</button>
+    </div>
+    
+    <ul id="projectList">
+        <li class="project-card web">
             <div class="card">
-                <h5>Dotornet</h5>
+                <video width="320" height="240" controls>
+                    <source src="path_to_your_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h5>HormonalCare</h5>
+                <p>HTML, CSS, JavaScript</p>
                 <p>App for medical appointments.</p>
-                <div class="platform-icons">
-                    <span class="icon-web">🌐</span>
-                    <span class="icon-mobile">📱</span>
-                </div>
-                <button onclick="openDialog('dotornet')">More Info</button>
                 <a href="dotornet" target="_blank">Page</a>
                 <a href="https://github.com/ClaudioSandro/Dotornet" target="_blank">GitHub</a>
             </div>
         </li>
-        <li>
+        <li class="project-card web mobile">
             <div class="card">
-                <h5>Peveseta</h5>
-                <p>Appfor get a gardening service.</p>
-                <div class="platform-icons">
-                    <span class="icon-web">🌐</span>
-                    <span class="icon-mobile">📱</span>
-                </div>
-                <button onclick="openDialog('peveseta')">More Info</button>
+                <video width="320" height="240" controls>
+                    <source src="path_to_your_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h5>GreenCare</h5>
+                <p>HTML, CSS, JavaScript</p>
+                <p>App for getting a gardening service.</p>
                 <a href="peveseta" target="_blank">Page</a>
-                <a href="peveseta" target="_blank">GitHub</a>
+                <a href="https://github.com/ClaudioSandro/peveseta" target="_blank">GitHub</a>
             </div>
         </li>
-        <li>
+        <li class="project-card web mobile">
             <div class="card">
-                <h5>Musicallz</h5>
+                <video width="320" height="240" controls>
+                    <source src="path_to_your_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h5>Ecomelodies</h5>
+                <p>HTML, CSS, JavaScript</p>
                 <p>App like a social media for music lovers.</p>
-                <div class="platform-icons">
-                    <span class="icon-web">🌐</span>
-                    <span class="icon-mobile">📱</span>
-                </div>
-                <button onclick="openDialog('musicallz')">More Info</button>
                 <a href="musicallz" target="_blank">Page</a>
-                <a href="musicallz" target="_blank">GitHub</a>
+                <a href="https://github.com/ClaudioSandro/musicallz" target="_blank">GitHub</a>
             </div>
         </li>
-        <li>
+        <li class="project-card desktop">
             <div class="card">
+                <video width="320" height="240" controls>
+                    <source src="path_to_your_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 <h5>Pronabec</h5>
-                <p>App for manage students who work.</p>
-                <div class="platform-icons">
-                    <span class="icon-desktop">💻</span>
-                </div>
-                <button onclick="openDialog('pronabec')">More Info</button>
+                <p>HTML, CSS, JavaScript</p>
+                <p>App for managing students who work.</p>
                 <a href="pronabec" target="_blank">Page</a>
-                <a href="pronabec" target="_blank">GitHub</a>
+                <a href="https://github.com/ClaudioSandro/pronabec" target="_blank">GitHub</a>
             </div>
         </li>
-        <li>
+        <li class="project-card desktop">
             <div class="card">
+                <video width="320" height="240" controls>
+                    <source src="path_to_your_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 <h5>AcomplePower</h5>
-                <p>App for electric cars drivers who drive large distant.</p>
-                <div class="platform-icons">
-                    <span class="icon-desktop">💻</span>
-                </div>
-                <button onclick="openDialog('acomplepower')">More Info</button>
+                <p>HTML, CSS, JavaScript</p>
+                <p>App for electric car drivers who drive long distances.</p>
                 <a href="acomplepower" target="_blank">Page</a>
-                <a href="acomplepower" target="_blank">GitHub</a>
+                <a href="https://github.com/ClaudioSandro/acomplepower" target="_blank">GitHub</a>
             </div>
         </li>
-        <li>
+        <li class="project-card web">
             <div class="card">
+                <video width="320" height="240" controls>
+                    <source src="path_to_your_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 <h5>Lebasi</h5>
-                <p>Ecom for selling electrodomestic products.</p>
-                <div class="platform-icons">
-                    <span class="icon-web">🌐</span>
-                </div>
-                <button onclick="openDialog('lebasi')">More Info</button>
+                <p>HTML, CSS, JavaScript</p>
+                <p>E-commerce for selling household products.</p>
                 <a href="lebasi" target="_blank">Page</a>
-                <a href="lebasi" target="_blank">GitHub</a>
+                <a href="https://github.com/ClaudioSandro/lebasi" target="_blank">GitHub</a>
             </div>
         </li>
-        <li>
+        <li class="project-card web">
             <div class="card">
+                <video width="320" height="240" controls>
+                    <source src="path_to_your_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 <h5>Sansur</h5>
-                <p>Ecom for selling electrodomestic products too.</p>
-                <div class="platform-icons">
-                    <span class="icon-web">🌐</span>
-                </div>
-                <button onclick="openDialog('sansur')">More Info</button>
+                <p>HTML, CSS, JavaScript</p>
+                <p>E-commerce for selling household products too.</p>
                 <a href="sansur" target="_blank">Page</a>
-                <a href="sansur" target="_blank">GitHub</a>
+                <a href="https://github.com/ClaudioSandro/sansur" target="_blank">GitHub</a>
             </div>
         </li>
     </ul>
@@ -168,6 +182,21 @@
             <a id="projectRepoLink" href="#" target="_blank">GitHub</a>
         </div>
     </div>
+    
+    <script>
+    function filterProjects(platform) {
+        var cards = document.querySelectorAll('.project-card');
+        cards.forEach(function(card) {
+            if (platform === 'all' || card.classList.contains(platform)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+    </script>
+
+
 
     <h3>Hackathons</h3>
 
